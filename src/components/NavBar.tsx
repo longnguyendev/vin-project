@@ -8,6 +8,7 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
+import NextLink from "next/link";
 
 const NAV_BAR_LIST_ITEMS = [
   {
@@ -132,13 +133,16 @@ const NavBar: FC<NavBarProps> = () => {
             <NavBarItem key={item.id} {...item} />
           ))}
         </Box>
-        <Button
-          sx={{
-            display: { xs: "none", md: "block" },
-          }}
-        >
-          Account
-        </Button>
+        <NextLink href="/login" passHref>
+          <Button
+            LinkComponent="a"
+            sx={{
+              display: { xs: "none", md: "block" },
+            }}
+          >
+            Account
+          </Button>
+        </NextLink>
         <Box
           sx={{
             display: { xs: "block", md: "none" },
