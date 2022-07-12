@@ -62,9 +62,9 @@ const Home: NextPageWithLayout = () => {
                 }}
               >
                 With customer-centred philosophy, VinFast smart cars are
-                integrated with world's most advanced techonologies, namely Al
-                based machine learning & deep learning, high-level autopilot for
-                a comfortable ride, immersive entertainment & personalized
+                integrated with world&apos;s most advanced techonologies, namely
+                Al based machine learning & deep learning, high-level autopilot
+                for a comfortable ride, immersive entertainment & personalized
                 experience.
               </Typography>
             </Grid>
