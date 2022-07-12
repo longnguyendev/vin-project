@@ -104,9 +104,12 @@ const NavBar: FC<NavBarProps> = () => {
           backgroundColor: "white",
         }}
       >
-        <Link href="/" sx={{ mr: "auto" }}>
+        <NextLink href="/" passHref>
           <IconButton
+            LinkComponent="a"
+            href="/"
             sx={{
+              mr: "auto",
               width: {
                 xs: 60,
                 md: 80,
@@ -119,7 +122,7 @@ const NavBar: FC<NavBarProps> = () => {
           >
             <Image src="/vin.png" alt="vin" width={64} height={64} />
           </IconButton>
-        </Link>
+        </NextLink>
         <Box
           component="ul"
           sx={{

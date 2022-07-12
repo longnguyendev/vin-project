@@ -20,85 +20,83 @@ const Card: FC<CardProps> = ({ image }) => {
       elevation={0}
       sx={{ minWidth: [250, 300, 350, 400], borderRadius: 0 }}
     >
-      <CardActionArea>
-        <CardMedia component="img" height="252" image={image} alt="VF e34" />
-        <CardContent>
-          <Typography
-            sx={{
-              fontWeight: 400,
-              fontSize: [18, 20, 22, 24],
-              color: "#404040",
-            }}
-          >
-            Break the limits together
-          </Typography>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="div"
-            sx={{
-              mt: [1, 2, 3],
-              mb: [1, 2],
-              fontWeight: 400,
-              fontSize: [38, 40, 42, 44],
-              color: "#101010",
-            }}
-          >
-            VF e34
-          </Typography>
-          <Divider />
-          <Box
-            sx={{
-              mt: [1, 2],
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
-            <Box>
-              <Typography
-                sx={{
-                  fontWeight: 400,
-                  fontSize: [12, 14, 16],
-                  color: "#787878",
-                }}
-              >
-                Verhicle
-              </Typography>
-              <Typography
-                sx={{
-                  mt: "4px",
-                  fontWeight: 600,
-                  fontSize: [18, 20, 22, 24],
-                  color: "#101010",
-                }}
-              >
-                SUV
-              </Typography>
-            </Box>
-            <Box>
-              <Typography
-                sx={{
-                  fontWeight: 400,
-                  fontSize: [12, 14, 16],
-                  color: "#787878",
-                }}
-              >
-                Verhicle
-              </Typography>
-              <Typography
-                sx={{
-                  mt: "4px",
-                  fontWeight: 600,
-                  fontSize: [18, 20, 22, 24],
-                  color: "#101010",
-                }}
-              >
-                SUV
-              </Typography>
-            </Box>
+      <CardMedia component="img" height="252" image={image} alt="VF e34" />
+      <CardContent>
+        <Typography
+          sx={{
+            fontWeight: 400,
+            fontSize: [18, 20, 22, 24],
+            color: "#404040",
+          }}
+        >
+          Break the limits together
+        </Typography>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{
+            mt: [1, 2, 3],
+            mb: [1, 2],
+            fontWeight: 400,
+            fontSize: [38, 40, 42, 44],
+            color: "#101010",
+          }}
+        >
+          VF e34
+        </Typography>
+        <Divider />
+        <Box
+          sx={{
+            mt: [1, 2],
+            display: "flex",
+            justifyContent: "space-between",
+          }}
+        >
+          <Box>
+            <Typography
+              sx={{
+                fontWeight: 400,
+                fontSize: [12, 14, 16],
+                color: "#787878",
+              }}
+            >
+              Verhicle
+            </Typography>
+            <Typography
+              sx={{
+                mt: "4px",
+                fontWeight: 600,
+                fontSize: [18, 20, 22, 24],
+                color: "#101010",
+              }}
+            >
+              SUV
+            </Typography>
           </Box>
-        </CardContent>
-      </CardActionArea>
+          <Box>
+            <Typography
+              sx={{
+                fontWeight: 400,
+                fontSize: [12, 14, 16],
+                color: "#787878",
+              }}
+            >
+              Verhicle
+            </Typography>
+            <Typography
+              sx={{
+                mt: "4px",
+                fontWeight: 600,
+                fontSize: [18, 20, 22, 24],
+                color: "#101010",
+              }}
+            >
+              SUV
+            </Typography>
+          </Box>
+        </Box>
+      </CardContent>
       <CardActions sx={{ p: 0 }}>
         <Grid container spacing={2}>
           <Grid item xs={4}>
