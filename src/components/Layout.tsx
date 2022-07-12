@@ -12,9 +12,14 @@ interface LayoutProps {
 const Layout: FC<PropsWithChildren<LayoutProps>> = ({ children, window }) => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
-      <Box id="back-to-top-anchor" />
       <ProgressBar />
       <NavBar />
+      <Box
+        id="back-to-top-anchor"
+        sx={{
+          height: { xs: 60, md: 0 },
+        }}
+      />
       <Box>{children}</Box>
       <Footer />
       <ScrollTop window={window} />

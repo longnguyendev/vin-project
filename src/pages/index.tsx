@@ -15,14 +15,62 @@ const Home: NextPageWithLayout = () => {
   const ref2 = useHorizontalScroll();
   return (
     <Box>
-      <Image
-        alt="Banner"
-        src="/banner.png"
-        layout="responsive"
-        width={1728}
-        height={916}
-        quality={100}
-      />
+      <Box sx={{ position: "relative" }}>
+        <Image
+          alt="Banner"
+          src="/banner.png"
+          layout="responsive"
+          width={1728}
+          height={916}
+          quality={100}
+        />
+        <Container
+          maxWidth="xl"
+          sx={{
+            mt: [5, 10, 15, 20],
+            mb: [3, 6, 9, 12],
+            position: "absolute",
+            display: {
+              xs: "none",
+              md: "block",
+            },
+            bottom: 0,
+            left: 0,
+            right: 0,
+          }}
+        >
+          <Grid container spacing={[1, 1, 2]}>
+            <Grid item xs={12} md={6}>
+              <Typography
+                sx={{
+                  fontWeight: 600,
+                  fontSize: [44, 48, 52, 56, 60],
+                  lineHeight: "80px",
+                  color: "white",
+                }}
+              >
+                Smart Technology for the Future
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Typography
+                sx={{
+                  fontWeight: 400,
+                  fontSize: [18, 20, 22, 24],
+                  lineHeight: "36px",
+                  color: "white",
+                }}
+              >
+                With customer-centred philosophy, VinFast smart cars are
+                integrated with world's most advanced techonologies, namely Al
+                based machine learning & deep learning, high-level autopilot for
+                a comfortable ride, immersive entertainment & personalized
+                experience.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
       <Container maxWidth="xl" sx={{ mt: [5, 10, 15, 20] }}>
         <Typography
           sx={{

@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import MuiCard from "@mui/material/Card";
-import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -18,9 +17,24 @@ const Card: FC<CardProps> = ({ image }) => {
   return (
     <MuiCard
       elevation={0}
-      sx={{ minWidth: [250, 300, 350, 400], borderRadius: 0 }}
+      sx={{
+        minWidth: [250, 300, 350, 400],
+        borderRadius: 0,
+        cursor: "pointer",
+      }}
     >
-      <CardMedia component="img" height="252" image={image} alt="VF e34" />
+      <CardMedia
+        component="img"
+        image={image}
+        alt="VF e34"
+        sx={{
+          ":hover": {
+            transform: "scale(1.2)",
+            transition: "0.3s",
+          },
+          height: [180, 210, 230, 250],
+        }}
+      />
       <CardContent>
         <Typography
           sx={{
